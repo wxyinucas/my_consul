@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package calculate;
+
+message Operands{
+	float x = 1;
+	float y = 2;
+}
+
+message Result{
+	float res = 1;
+}
+
+
+service Operations{
+	rpc add(Operands) returns (Result);
+}

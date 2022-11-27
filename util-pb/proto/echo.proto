@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package echo;
+
+message Origin{
+	string message = 1;
+}
+
+
+message Echoed{
+	string message = 1;
+	optional string suffix = 2;
+}
+
+service Echo{
+	rpc echo(Origin) returns (Echoed);
+}
