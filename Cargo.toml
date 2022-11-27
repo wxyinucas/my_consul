@@ -1,0 +1,2 @@
+[workspace]
+members = ["svc-add", "svc-echo", "util-consul", "util-pb"]
